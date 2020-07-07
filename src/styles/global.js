@@ -17,6 +17,7 @@ export default createGlobalStyle`
     font-size: 1.6rem;
     font-family: "Nunito", sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
   }
   body,
@@ -49,19 +50,15 @@ export default createGlobalStyle`
     display: block;
     max-width: 100%;
   }
-  .grid-container {
+  .wrapper {
     display: grid;
-    grid-template-areas:
-      "header"
-      "main"
-      "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr 5rem;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 6rem 1fr 4rem;
     min-height: 100vh;
-  }
-
-  .main {
-    grid-area: main;
+    grid-template-areas:
+      "header header"
+      "menu content"
+      "menu footer";
   }
 
 `;

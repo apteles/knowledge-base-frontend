@@ -1,10 +1,13 @@
 import React from 'react';
 import GlobalStyles from './styles/global';
+
+import DefaultLayout from './components/_layouts/default';
+
 function App() {
     return (
         <>
             <GlobalStyles />
-            <div className="App">hi</div>
+            <DefaultLayout>Hello</DefaultLayout>
         </>
     );
 }
