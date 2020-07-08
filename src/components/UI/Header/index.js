@@ -1,9 +1,23 @@
 import React from 'react';
-
-import { Container } from './styles';
-
-function Header() {
-    return <Container></Container>;
+import PropTypes from 'prop-types';
+import { Container, Title, Action } from './styles';
+import { FaAngleLeft, FaAngleDown } from 'react-icons/fa';
+import connectLayout from '../HOC/connectLayout';
+function Header({ title, context }) {
+    const { state, toggleMenu } = context;
+    const { isActive } = state.menu;
+    return (
+        <Container>
+            <Action onClick={toggleMenu}>
+                {!isActive ? <FaAngleLeft /> : <FaAngleDown />}
+            </Action>
+            <Title>{title}</Title>
+        </Container>
+    );
 }
 
-export default Header;
+Header.propTypes = {
+    title: PropTypes.string,
+};
+
+export default connectLayout(React.memo(Header));

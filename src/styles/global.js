@@ -50,15 +50,6 @@ export default createGlobalStyle`
     display: block;
     max-width: 100%;
   }
-  .wrapper {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-template-rows: 6rem 1fr 4rem;
-    min-height: 100vh;
-    grid-template-areas:
-      "header header"
-      "menu content"
-      "menu footer";
-  }
+
 
 `;

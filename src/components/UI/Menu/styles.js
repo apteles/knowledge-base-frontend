@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.aside`
     grid-area: menu;
@@ -7,4 +7,9 @@ export const Container = styled.aside`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    ${(props) =>
+        !props.hide &&
+        css`
+            display: none;
+        `}
 `;
