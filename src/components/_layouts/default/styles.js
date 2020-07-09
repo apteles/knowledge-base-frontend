@@ -7,15 +7,13 @@ export const Wrapper = styled.div`
     min-height: 100vh;
 
     ${({ context }) => {
-        const { menu } = context.state;
-
-        return menu.isActive
+        const { sidebar } = context.state.menu;
+        return sidebar.active
             ? css`
                   grid-template-areas:
                       'header header'
                       'menu content'
                       'menu footer';
-                  transition: grid-template-areas 500ms ease-in-out;
               `
             : css`
                   grid-template-areas:

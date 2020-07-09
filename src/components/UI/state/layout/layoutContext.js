@@ -4,7 +4,12 @@ import * as Actions from './actions';
 
 const INITIAL_STATE = {
     menu: {
-        isActive: false,
+        sidebar: {
+            active: false,
+        },
+        user: {
+            active: false,
+        },
     },
 };
 

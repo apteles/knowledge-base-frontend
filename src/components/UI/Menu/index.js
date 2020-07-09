@@ -4,8 +4,8 @@ import { Container } from './styles';
 import connectLayout from '../HOC/connectLayout';
 
 function Menu({ context }) {
-    const { isActive } = context.state.menu;
-    return <Container hide={isActive}>Menu</Container>;
+    const { active } = context.state.menu.sidebar;
+    return <Container hide={active}>Menu</Container>;
 }
 
 export default connectLayout(Menu);

@@ -1,6 +1,6 @@
 export function toggleMenu(dispatch) {
     return () => dispatch({ type: '@layout/TOGGLE_MENU' });
 }
-export function foo(dispatch) {
-    return () => dispatch({ type: '@layout/foo' });
+export function toggleMenuUser(dispatch) {
+    return () => dispatch({ type: '@layout/TOGGLE_MENU_USER' });
 }
