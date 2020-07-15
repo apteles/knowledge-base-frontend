@@ -1,14 +1,13 @@
 import React from 'react';
 import GlobalStyles from './styles/global';
-
-import DefaultLayout from './components/_layouts/default';
-
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
 function App() {
     return (
-        <>
+        <BrowserRouter>
             <GlobalStyles />
-            <DefaultLayout>Hello</DefaultLayout>
-        </>
+            <Routes />
+        </BrowserRouter>
     );
 }
 
