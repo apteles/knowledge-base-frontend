@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import {
     Container,
     Title,
@@ -29,10 +30,11 @@ function Header({ title, context }) {
                 <FaAngleDown onClick={toggleMenuUser} />
                 <MenuDropDown show={menu.user.active}>
                     <MenuItem>
-                        <BsGearFill /> <a href="/">Administração</a>
+                        <BsGearFill />
+                        <Link to="/administration">Administração</Link>
                     </MenuItem>
                     <MenuItem>
-                        <RiLogoutCircleLine /> <a href="/">Sair</a>
+                        <RiLogoutCircleLine /> <Link to="/logout">Sair</Link>
                     </MenuItem>
                 </MenuDropDown>
             </UserDropDown>
