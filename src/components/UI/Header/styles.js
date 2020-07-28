@@ -57,7 +57,8 @@ export const UserAvatar = styled.img`
 export const MenuDropDown = styled.ul`
     position: absolute;
     top: 70px;
-    box-shadow: 0px 10px 15px #1b1c2029;
+    background: #fff;
+    // box-shadow: 0px 10px 15px #1b1c2029;
     min-width: 170px;
     padding: 1rem;
 
@@ -84,6 +85,20 @@ export const MenuDropDown = styled.ul`
         border-bottom: 15px solid #fff;
     }
 `;
+export const MenuSection = styled.li`
+    color: #dedede;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    > span {
+        color: #ede8e8;
+        font-weight: bold;
+        margin-left: 0.5rem;
+    }
+`;
+
 export const MenuItem = styled.li`
     color: #515768;
     padding: 1rem;
@@ -91,10 +106,15 @@ export const MenuItem = styled.li`
     align-items: center;
     justify-content: flex-start;
     &:hover {
-        background: #ddd;
+        background: #ede8e8;
     }
     > a {
         color: #515768;
         margin-left: 0.5rem;
     }
+`;
+export const Divider = styled.div`
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #dedede;
 `;
