@@ -6,7 +6,7 @@ import { FaCogs } from 'react-icons/fa';
 function Admin() {
     return (
         <PageTitle
-            Icon={FaCogs}
+            icon={FaCogs}
             title="Administração"
             subtitle="Cadastros Gerais"
         />
