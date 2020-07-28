@@ -1,9 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropType from 'prop-types';
 import { Title, Subtitle } from './styles';
 import { Container } from './styles';
 
-function PageTitle({ Icon, title, subtitle }) {
+function PageTitle({ icon: Icon, title, subtitle }) {
     return (
         <>
             <Container>
@@ -16,9 +16,9 @@ function PageTitle({ Icon, title, subtitle }) {
     );
 }
 PageTitle.propTypes = {
-    Icon: PropTypes.string,
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
+    icon: PropType.oneOfType([PropType.element, PropType.func]),
+    title: PropType.string,
+    subtitle: PropType.string,
 };
 
 export default PageTitle;
