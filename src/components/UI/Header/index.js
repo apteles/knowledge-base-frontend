@@ -2,6 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import {
+    FaAngleLeft,
+    FaAngleDown,
+    FaUsersCog,
+    FaFileSignature,
+    FaRegUserCircle,
+} from 'react-icons/fa';
+import { BsGearFill } from 'react-icons/bs';
+import { RiLogoutCircleLine, RiFolderSettingsLine } from 'react-icons/ri';
+import {
     Container,
     Title,
     Action,
@@ -13,16 +22,8 @@ import {
     MenuSection,
     Divider,
 } from './styles';
-import {
-    FaAngleLeft,
-    FaAngleDown,
-    FaUsersCog,
-    FaFileSignature,
-    FaRegUserCircle,
-} from 'react-icons/fa';
-import { BsGearFill } from 'react-icons/bs';
-import { RiLogoutCircleLine, RiFolderSettingsLine } from 'react-icons/ri';
 import connectLayout from '../HOC/connectLayout';
+
 function Header({ title, context }) {
     const { state, toggleMenu, toggleMenuUser } = context;
     const { menu } = state;
