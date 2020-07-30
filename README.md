@@ -11,7 +11,7 @@ tendo em vista os propósitos que tenho em praticar e conhecer mais afundo a tec
 -   Administração de artigos/posts.
 -   Autenticação e Autorização de usuários.
 
-Caso tenha interesse, o projeto pode ser acessado [Aqui]().
+Caso tenha interesse, o projeto pode ser acessado [Aqui](https://knowledge-base-frontend.netlify.app/).
 
 ## Tecnologias e Ferramentas
 
